@@ -2041,24 +2041,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		41DCD6AD0846DC1A746490AC96B4578D /* Release */ = {
+		42C188C50FC32923FE2CD191DAB015BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
+			baseConfigurationReference = AB6235EEC837BF1FAC9037E98EA093A3 /* FlickrKit.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/FlickrKit/FlickrKit-prefix.pch";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
-			name = Release;
+			name = Debug;
 		};
-		61220CEE3BC8370E054228E92865C313 /* Debug */ = {
+		61E9C960176A58563D21517D299990A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2093,11 +2093,28 @@
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
-		9020189B51C822F98C5B94EEDF67B2FF /* Release */ = {
+		710D4F6AD878E6887D3A0BA9EBAB7F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		C14E726F63453C713F104F2B238EDF39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB6235EEC837BF1FAC9037E98EA093A3 /* FlickrKit.xcconfig */;
 			buildSettings = {
@@ -2110,28 +2127,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
-		C6B1E7B10AB2EEE39C04A4AA7BAE292B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB6235EEC837BF1FAC9037E98EA093A3 /* FlickrKit.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FlickrKit/FlickrKit-prefix.pch";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
-			};
-			name = Debug;
-		};
-		D704B04E00139B8E8C866BBC08ED1B75 /* Release */ = {
+		C332B185519D08E2641ECF2E00474E29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2160,12 +2160,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D8F87882BC9E4BBBEF8AC4B39B72AA9D /* Debug */ = {
+		EF05E434ED8B96E49335CACE839AED18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
 			buildSettings = {
@@ -2178,7 +2178,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -2188,8 +2188,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61220CEE3BC8370E054228E92865C313 /* Debug */,
-				D704B04E00139B8E8C866BBC08ED1B75 /* Release */,
+				61E9C960176A58563D21517D299990A4 /* Debug */,
+				C332B185519D08E2641ECF2E00474E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2197,8 +2197,8 @@
 		A6D1726C727ED94453DBA4EAB17FC0B5 /* Build configuration list for PBXNativeTarget "FlickrKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C6B1E7B10AB2EEE39C04A4AA7BAE292B /* Debug */,
-				9020189B51C822F98C5B94EEDF67B2FF /* Release */,
+				42C188C50FC32923FE2CD191DAB015BA /* Debug */,
+				C14E726F63453C713F104F2B238EDF39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2206,8 +2206,8 @@
 		C53E833920D9A00079F17993A662703F /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8F87882BC9E4BBBEF8AC4B39B72AA9D /* Debug */,
-				41DCD6AD0846DC1A746490AC96B4578D /* Release */,
+				EF05E434ED8B96E49335CACE839AED18 /* Debug */,
+				710D4F6AD878E6887D3A0BA9EBAB7F5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
