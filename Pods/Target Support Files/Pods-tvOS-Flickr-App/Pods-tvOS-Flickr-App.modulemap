@@ -1,0 +1,6 @@
+framework module Pods_tvOS_Flickr_App {
+  umbrella header "Pods-tvOS-Flickr-App-umbrella.h"
+
+  export *
+  module * { export * }
+}

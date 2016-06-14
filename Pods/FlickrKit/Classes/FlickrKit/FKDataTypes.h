@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 DevedUp Ltd. All rights reserved. http://www.devedup.com
 //
 
-#import <UIKit/UIKit.h>
-
 typedef void (^FKAPIImageUploadCompletion)(NSString *imageID, NSError *error);
 typedef void (^FKAPIRequestCompletion)(NSDictionary *response, NSError *error);
 typedef void (^FKAPIAuthBeginCompletion)(NSURL *flickrLoginPageURL, NSError *error);

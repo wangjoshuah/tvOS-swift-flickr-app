@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00287CE0E3D3450E5973AC23 /* Pods_tvOS_Flickr_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5988BD91A9FA9E686F813FFA /* Pods_tvOS_Flickr_App.framework */; };
 		2D0E153F1CE3B2A2009C1D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0E153E1CE3B2A2009C1D76 /* AppDelegate.swift */; };
 		2D0E15411CE3B2A2009C1D76 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0E15401CE3B2A2009C1D76 /* FirstViewController.swift */; };
 		2D0E15431CE3B2A2009C1D76 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0E15421CE3B2A2009C1D76 /* SecondViewController.swift */; };
@@ -25,6 +26,8 @@
 		2D0E15A91CEBB9E4009C1D76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0E15A81CEBB9E4009C1D76 /* UIKit.framework */; };
 		2D0E15AB1CEBB9F1009C1D76 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0E15AA1CEBB9F1009C1D76 /* libicucore.tbd */; };
 		2D0E15AD1CEBB9F8009C1D76 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0E15AC1CEBB9F8009C1D76 /* libsqlite3.tbd */; };
+		2D7191481D07301B00B55E71 /* OptimizelyTvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7191451D07301B00B55E71 /* OptimizelyTvOS.framework */; };
+		2DF4D56C1D07C5E90089D9A2 /* OptimizelyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4D56B1D07C5E90089D9A2 /* OptimizelyManager.swift */; };
 		EA6552CB538908BD9A411118 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A036914C8EDA99D5BEE8CDD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +45,97 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D0E153A1CE3B2A2009C1D76;
 			remoteInfo = "tvOS-Flickr-App";
+		};
+		2D5383231CF8C4C900A866CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D0E15B91CECD9F9009C1D76;
+			remoteInfo = "iOS-SDK";
+		};
+		2D5383251CF8C4C900A866CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D0E15CC1CECDAA6009C1D76;
+			remoteInfo = "tvOS-SDK";
+		};
+		2D5383271CF8C4C900A866CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D0E15D61CECDABF009C1D76;
+			remoteInfo = "watchOS-SDK";
+		};
+		2D5383291CF8C4C900A866CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D0E15E01CECDACD009C1D76;
+			remoteInfo = "OS-X-SDK";
+		};
+		2D53832B1CF8C4C900A866CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D1604781CECF64800B09492;
+			remoteInfo = "iOS-SDK Unit Tests";
+		};
+		2D53832D1CF8C4C900A866CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D1604881CECF66B00B09492;
+			remoteInfo = "tvOS-SDK Unit Tests";
+		};
+		2D53832F1CF8C4C900A866CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D1604971CECF67900B09492;
+			remoteInfo = "OS-X-SDK Unit Tests";
+		};
+		2D7191441D07301B00B55E71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D7190F91D0724BD00B55E71;
+			remoteInfo = OptimizelyTvOS;
+		};
+		2D7191461D07301B00B55E71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D7191021D0724BD00B55E71;
+			remoteInfo = OptimizelyTvOSTests;
+		};
+		2D98D8D51D07409100218A7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DF4D50C1D0770670089D9A2;
+			remoteInfo = OptimizelyTvOS;
+		};
+		2DF4D5611D07713A0089D9A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D5383501CF8CFE300A866CD;
+			remoteInfo = tvOSTest;
+		};
+		2DF4D5631D07713A0089D9A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D5383681CF8CFE300A866CD;
+			remoteInfo = tvOSTestTests;
+		};
+		2DF4D5651D07713A0089D9A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D5383731CF8CFE400A866CD;
+			remoteInfo = tvOSTestUITests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -71,8 +165,13 @@
 		2D0E15A81CEBB9E4009C1D76 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D0E15AA1CEBB9F1009C1D76 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		2D0E15AC1CEBB9F8009C1D76 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Objective-C SDK.xcodeproj"; path = "../Objective-C-SDK/Optimizely Objective-C SDK/Objective-C SDK.xcodeproj"; sourceTree = "<group>"; };
+		2DF4D56B1D07C5E90089D9A2 /* OptimizelyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptimizelyManager.swift; sourceTree = "<group>"; };
 		4A036914C8EDA99D5BEE8CDD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5988BD91A9FA9E686F813FFA /* Pods_tvOS_Flickr_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvOS_Flickr_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F0B9E8DC43C6BBB9E2ABF2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		93EE54F0DD5A13DC8537014E /* Pods-tvOS-Flickr-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS-Flickr-App.release.xcconfig"; path = "../Pods/Target Support Files/Pods-tvOS-Flickr-App/Pods-tvOS-Flickr-App.release.xcconfig"; sourceTree = "<group>"; };
+		D8FF6870D5FB80A52F96FB54 /* Pods-tvOS-Flickr-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS-Flickr-App.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-tvOS-Flickr-App/Pods-tvOS-Flickr-App.debug.xcconfig"; sourceTree = "<group>"; };
 		FAF737C6B914B9472A3FAC76 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7191481D07301B00B55E71 /* OptimizelyTvOS.framework in Frameworks */,
 				2D0E15AD1CEBB9F8009C1D76 /* libsqlite3.tbd in Frameworks */,
 				2D0E15AB1CEBB9F1009C1D76 /* libicucore.tbd in Frameworks */,
 				2D0E15A91CEBB9E4009C1D76 /* UIKit.framework in Frameworks */,
@@ -92,6 +192,7 @@
 				2D0E159D1CEBB9BC009C1D76 /* AudioToolbox.framework in Frameworks */,
 				2D0E15721CE3FB54009C1D76 /* libFlickrKit.a in Frameworks */,
 				EA6552CB538908BD9A411118 /* libPods.a in Frameworks */,
+				00287CE0E3D3450E5973AC23 /* Pods_tvOS_Flickr_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +216,7 @@
 		299D979B8FCDA246B3D01F5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */,
 				2D0E15AC1CEBB9F8009C1D76 /* libsqlite3.tbd */,
 				2D0E15AA1CEBB9F1009C1D76 /* libicucore.tbd */,
 				2D0E15A81CEBB9E4009C1D76 /* UIKit.framework */,
@@ -126,6 +228,7 @@
 				2D0E159C1CEBB9BC009C1D76 /* AudioToolbox.framework */,
 				2D0E15711CE3FB54009C1D76 /* libFlickrKit.a */,
 				4A036914C8EDA99D5BEE8CDD /* libPods.a */,
+				5988BD91A9FA9E686F813FFA /* Pods_tvOS_Flickr_App.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				2D0E153E1CE3B2A2009C1D76 /* AppDelegate.swift */,
+				2DF4D56B1D07C5E90089D9A2 /* OptimizelyManager.swift */,
 				2D0E15731CE3FC6E009C1D76 /* Bridging.h */,
 				2D0E156D1CE3DD6E009C1D76 /* PersonalConstants.swift */,
 				2D0E15401CE3B2A2009C1D76 /* FirstViewController.swift */,
@@ -185,11 +289,32 @@
 			path = "tvOS-Flickr-AppUITests";
 			sourceTree = "<group>";
 		};
+		2D53831A1CF8C4C900A866CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D5383241CF8C4C900A866CD /* libiOS-SDK.a */,
+				2D5383261CF8C4C900A866CD /* libtvOS-SDK.a */,
+				2D5383281CF8C4C900A866CD /* libwatchOS-SDK.a */,
+				2D53832A1CF8C4C900A866CD /* libOS-X-SDK.a */,
+				2D53832C1CF8C4C900A866CD /* iOS-SDK Unit Tests.xctest */,
+				2D53832E1CF8C4C900A866CD /* tvOS-SDK Unit Tests.xctest */,
+				2D5383301CF8C4C900A866CD /* OS-X-SDK Unit Tests.xctest */,
+				2DF4D5621D07713A0089D9A2 /* tvOSTest.app */,
+				2DF4D5641D07713A0089D9A2 /* tvOSTestTests.xctest */,
+				2DF4D5661D07713A0089D9A2 /* tvOSTestUITests.xctest */,
+				2D7191451D07301B00B55E71 /* OptimizelyTvOS.framework */,
+				2D7191471D07301B00B55E71 /* OptimizelyTvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		94730CDC42061A0D24868ACD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				63F0B9E8DC43C6BBB9E2ABF2 /* Pods.debug.xcconfig */,
 				FAF737C6B914B9472A3FAC76 /* Pods.release.xcconfig */,
+				D8FF6870D5FB80A52F96FB54 /* Pods-tvOS-Flickr-App.debug.xcconfig */,
+				93EE54F0DD5A13DC8537014E /* Pods-tvOS-Flickr-App.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -201,16 +326,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D0E15621CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "tvOS-Flickr-App" */;
 			buildPhases = (
-				12A7A00E0867A5368DDAB5EA /* Check Pods Manifest.lock */,
+				12A7A00E0867A5368DDAB5EA /* 📦 Check Pods Manifest.lock */,
 				2D0E15371CE3B2A2009C1D76 /* Sources */,
 				2D0E15381CE3B2A2009C1D76 /* Frameworks */,
 				2D0E15391CE3B2A2009C1D76 /* Resources */,
-				AFE05AC3A7EB112F96214EB2 /* Embed Pods Frameworks */,
-				C61B772AEBF82B696FC64780 /* Copy Pods Resources */,
+				AFE05AC3A7EB112F96214EB2 /* 📦 Embed Pods Frameworks */,
+				C61B772AEBF82B696FC64780 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2D98D8D61D07409100218A7E /* PBXTargetDependency */,
 			);
 			name = "tvOS-Flickr-App";
 			productName = "tvOS-Flickr-App";
@@ -265,6 +391,7 @@
 				TargetAttributes = {
 					2D0E153A1CE3B2A2009C1D76 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = BDMC9C2X5M;
 					};
 					2D0E154D1CE3B2A2009C1D76 = {
 						CreatedOnToolsVersion = 7.2;
@@ -287,6 +414,12 @@
 			mainGroup = 2D0E15321CE3B2A2009C1D76;
 			productRefGroup = 2D0E153C1CE3B2A2009C1D76 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2D53831A1CF8C4C900A866CD /* Products */;
+					ProjectRef = 2D5383191CF8C4C900A866CD /* Objective-C SDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2D0E153A1CE3B2A2009C1D76 /* tvOS-Flickr-App */,
@@ -295,6 +428,93 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2D5383241CF8C4C900A866CD /* libiOS-SDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libiOS-SDK.a";
+			remoteRef = 2D5383231CF8C4C900A866CD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D5383261CF8C4C900A866CD /* libtvOS-SDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libtvOS-SDK.a";
+			remoteRef = 2D5383251CF8C4C900A866CD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D5383281CF8C4C900A866CD /* libwatchOS-SDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libwatchOS-SDK.a";
+			remoteRef = 2D5383271CF8C4C900A866CD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D53832A1CF8C4C900A866CD /* libOS-X-SDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libOS-X-SDK.a";
+			remoteRef = 2D5383291CF8C4C900A866CD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D53832C1CF8C4C900A866CD /* iOS-SDK Unit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "iOS-SDK Unit Tests.xctest";
+			remoteRef = 2D53832B1CF8C4C900A866CD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D53832E1CF8C4C900A866CD /* tvOS-SDK Unit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "tvOS-SDK Unit Tests.xctest";
+			remoteRef = 2D53832D1CF8C4C900A866CD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D5383301CF8C4C900A866CD /* OS-X-SDK Unit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "OS-X-SDK Unit Tests.xctest";
+			remoteRef = 2D53832F1CF8C4C900A866CD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D7191451D07301B00B55E71 /* OptimizelyTvOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OptimizelyTvOS.framework;
+			remoteRef = 2D7191441D07301B00B55E71 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D7191471D07301B00B55E71 /* OptimizelyTvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OptimizelyTvOSTests.xctest;
+			remoteRef = 2D7191461D07301B00B55E71 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DF4D5621D07713A0089D9A2 /* tvOSTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = tvOSTest.app;
+			remoteRef = 2DF4D5611D07713A0089D9A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DF4D5641D07713A0089D9A2 /* tvOSTestTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = tvOSTestTests.xctest;
+			remoteRef = 2DF4D5631D07713A0089D9A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DF4D5661D07713A0089D9A2 /* tvOSTestUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = tvOSTestUITests.xctest;
+			remoteRef = 2DF4D5651D07713A0089D9A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2D0E15391CE3B2A2009C1D76 /* Resources */ = {
@@ -323,14 +543,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12A7A00E0867A5368DDAB5EA /* Check Pods Manifest.lock */ = {
+		12A7A00E0867A5368DDAB5EA /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,34 +558,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		AFE05AC3A7EB112F96214EB2 /* Embed Pods Frameworks */ = {
+		AFE05AC3A7EB112F96214EB2 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-tvOS-Flickr-App/Pods-tvOS-Flickr-App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C61B772AEBF82B696FC64780 /* Copy Pods Resources */ = {
+		C61B772AEBF82B696FC64780 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-tvOS-Flickr-App/Pods-tvOS-Flickr-App-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -376,6 +596,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0E15431CE3B2A2009C1D76 /* SecondViewController.swift in Sources */,
+				2DF4D56C1D07C5E90089D9A2 /* OptimizelyManager.swift in Sources */,
 				2D0E156E1CE3DD6E009C1D76 /* PersonalConstants.swift in Sources */,
 				2D0E153F1CE3B2A2009C1D76 /* AppDelegate.swift in Sources */,
 				2D0E15411CE3B2A2009C1D76 /* FirstViewController.swift in Sources */,
@@ -411,6 +632,11 @@
 			target = 2D0E153A1CE3B2A2009C1D76 /* tvOS-Flickr-App */;
 			targetProxy = 2D0E155A1CE3B2A2009C1D76 /* PBXContainerItemProxy */;
 		};
+		2D98D8D61D07409100218A7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OptimizelyTvOS;
+			targetProxy = 2D98D8D51D07409100218A7E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -444,6 +670,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -488,6 +715,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -508,37 +736,59 @@
 		};
 		2D0E15631CE3B2A2009C1D76 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63F0B9E8DC43C6BBB9E2ABF2 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D8FF6870D5FB80A52F96FB54 /* Pods-tvOS-Flickr-App.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS Icon";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/FlickrKit\"",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "tvOS-Flickr-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.tvOS-Flickr-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "tvOS-Flickr-App/Bridging.h";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
 		2D0E15641CE3B2A2009C1D76 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAF737C6B914B9472A3FAC76 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 93EE54F0DD5A13DC8537014E /* Pods-tvOS-Flickr-App.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS Icon";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/FlickrKit\"",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "tvOS-Flickr-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.tvOS-Flickr-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "tvOS-Flickr-App/Bridging.h";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
