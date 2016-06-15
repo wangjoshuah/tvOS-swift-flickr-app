@@ -55,7 +55,7 @@ class FirstViewController: UICollectionViewController {
                     let topPhotos = response["photos"] as! [NSObject: AnyObject]
                     let photoArray = topPhotos["photo"] as! [[NSObject: AnyObject]]
                     for photoDictionary in photoArray {
-                        let photoURL = FlickrKit.sharedFlickrKit().photoURLForSize(FKPhotoSizeLargeSquare150, fromPhotoDictionary: photoDictionary)
+                        let photoURL = FlickrKit.sharedFlickrKit().photoURLForSize(FKPhotoSizeLarge2048, fromPhotoDictionary: photoDictionary)
                         self.photoURLs.append(photoURL)
                     }
                     //                    self.loadPhotos(self.photoURLs)
@@ -86,8 +86,8 @@ class FirstViewController: UICollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("FirstViewControllerCollectionViewCellReuiseIdentifier", forIndexPath: indexPath)
-        let imageView: UIImageView = UIImageView.init(frame: cell.frame);
-        imageView.image = AppDelegate.images[indexPath.row]
+        let imageView: UIImageView = UIImageView.init(image: AppDelegate.images[indexPath.row])
+        //        imageView.image = AppDelegate.images[indexPath.row]
         cell.contentView.addSubview(imageView)
         print(indexPath.description)
         print(indexPath.row.description)

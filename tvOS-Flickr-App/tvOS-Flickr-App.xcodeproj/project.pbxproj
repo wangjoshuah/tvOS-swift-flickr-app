@@ -16,7 +16,6 @@
 		2D0E15531CE3B2A2009C1D76 /* tvOS_Flickr_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0E15521CE3B2A2009C1D76 /* tvOS_Flickr_AppTests.swift */; };
 		2D0E155E1CE3B2A2009C1D76 /* tvOS_Flickr_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0E155D1CE3B2A2009C1D76 /* tvOS_Flickr_AppUITests.swift */; };
 		2D0E156E1CE3DD6E009C1D76 /* PersonalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0E156D1CE3DD6E009C1D76 /* PersonalConstants.swift */; };
-		2D0E15721CE3FB54009C1D76 /* libFlickrKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0E15711CE3FB54009C1D76 /* libFlickrKit.a */; };
 		2D0E159D1CEBB9BC009C1D76 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0E159C1CEBB9BC009C1D76 /* AudioToolbox.framework */; };
 		2D0E159F1CEBB9C2009C1D76 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0E159E1CEBB9C2009C1D76 /* CFNetwork.framework */; };
 		2D0E15A11CEBB9C8009C1D76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0E15A01CEBB9C8009C1D76 /* Foundation.framework */; };
@@ -28,7 +27,6 @@
 		2D0E15AD1CEBB9F8009C1D76 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0E15AC1CEBB9F8009C1D76 /* libsqlite3.tbd */; };
 		2D7191481D07301B00B55E71 /* OptimizelyTvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7191451D07301B00B55E71 /* OptimizelyTvOS.framework */; };
 		2DF4D56C1D07C5E90089D9A2 /* OptimizelyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4D56B1D07C5E90089D9A2 /* OptimizelyManager.swift */; };
-		EA6552CB538908BD9A411118 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A036914C8EDA99D5BEE8CDD /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,8 +188,6 @@
 				2D0E15A11CEBB9C8009C1D76 /* Foundation.framework in Frameworks */,
 				2D0E159F1CEBB9C2009C1D76 /* CFNetwork.framework in Frameworks */,
 				2D0E159D1CEBB9BC009C1D76 /* AudioToolbox.framework in Frameworks */,
-				2D0E15721CE3FB54009C1D76 /* libFlickrKit.a in Frameworks */,
-				EA6552CB538908BD9A411118 /* libPods.a in Frameworks */,
 				00287CE0E3D3450E5973AC23 /* Pods_tvOS_Flickr_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,12 +322,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D0E15621CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "tvOS-Flickr-App" */;
 			buildPhases = (
-				12A7A00E0867A5368DDAB5EA /* 📦 Check Pods Manifest.lock */,
+				12A7A00E0867A5368DDAB5EA /* [CP] Check Pods Manifest.lock */,
 				2D0E15371CE3B2A2009C1D76 /* Sources */,
 				2D0E15381CE3B2A2009C1D76 /* Frameworks */,
 				2D0E15391CE3B2A2009C1D76 /* Resources */,
-				AFE05AC3A7EB112F96214EB2 /* 📦 Embed Pods Frameworks */,
-				C61B772AEBF82B696FC64780 /* 📦 Copy Pods Resources */,
+				AFE05AC3A7EB112F96214EB2 /* [CP] Embed Pods Frameworks */,
+				C61B772AEBF82B696FC64780 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -543,14 +539,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12A7A00E0867A5368DDAB5EA /* 📦 Check Pods Manifest.lock */ = {
+		12A7A00E0867A5368DDAB5EA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,14 +554,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		AFE05AC3A7EB112F96214EB2 /* 📦 Embed Pods Frameworks */ = {
+		AFE05AC3A7EB112F96214EB2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,14 +569,14 @@
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-tvOS-Flickr-App/Pods-tvOS-Flickr-App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C61B772AEBF82B696FC64780 /* 📦 Copy Pods Resources */ = {
+		C61B772AEBF82B696FC64780 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -687,9 +683,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = appletvos;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = appletvos9.2;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
@@ -726,8 +724,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = appletvos;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = appletvos9.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 				VALIDATE_PRODUCT = YES;
@@ -755,11 +756,20 @@
 				);
 				INFOPLIST_FILE = "tvOS-Flickr-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.tvOS-Flickr-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = appletvos9.2;
 				SWIFT_OBJC_BRIDGING_HEADER = "tvOS-Flickr-App/Bridging.h";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Debug;
 		};
@@ -784,11 +794,20 @@
 				);
 				INFOPLIST_FILE = "tvOS-Flickr-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.tvOS-Flickr-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = appletvos9.2;
 				SWIFT_OBJC_BRIDGING_HEADER = "tvOS-Flickr-App/Bridging.h";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
 		};

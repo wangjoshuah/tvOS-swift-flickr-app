@@ -58,10 +58,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let variation: OptimizelyVariation = OptimizelyManager.optimizely!.activateExperimentForKey("Flickr_Pictures", withUserId: OptimizelyManager.userId!);
         print(variation.variationKey);
         if (variation.variationKey == "Dogs") {
-            flickrPhotoSearchText.text = "Dogs"
+            flickrPhotoSearchText.text = "golden retriever"
         }
         else if (variation.variationKey == "Cats") {
-            flickrPhotoSearchText.text = "Cats"
+            flickrPhotoSearchText.text = "jumping cat"
         }
         
         FlickrKit.sharedFlickrKit().call(flickrPhotoSearchText) { (response, error) -> Void in
@@ -71,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     let topPhotos = response["photos"] as! [NSObject: AnyObject]
                     let photoArray = topPhotos["photo"] as! [[NSObject: AnyObject]]
                     for photoDictionary in photoArray {
-                        let photoURL = FlickrKit.sharedFlickrKit().photoURLForSize(FKPhotoSizeLargeSquare150, fromPhotoDictionary: photoDictionary)
+                        let photoURL = FlickrKit.sharedFlickrKit().photoURLForSize(FKPhotoSizeLarge1024, fromPhotoDictionary: photoDictionary)
                         AppDelegate.photoURLs.append(photoURL)
                     }
                     self.loadPhotos(AppDelegate.photoURLs)
