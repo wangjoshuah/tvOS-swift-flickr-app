@@ -21,7 +21,8 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func CustomButtonPressed(sender: AnyObject) {
-        OptimizelyManager.optimizely!.trackEvent("pressed_button", forUser: OptimizelyManager.userId!)
+        // track conversion
+        OptimizelyManager.optimizely!.trackEvent("pressed_button", forUser: OptimizelyManager.getUserId())
     }
 }
 

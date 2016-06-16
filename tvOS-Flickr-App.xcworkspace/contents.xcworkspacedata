@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:tvOS-Flickr-App/tvOS-Flickr-App.xcodeproj">
+      location = "group:/Users/jwang/repos/tvOS-swift-flickr-app/tvOS-Flickr-App/Pet Adopt.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

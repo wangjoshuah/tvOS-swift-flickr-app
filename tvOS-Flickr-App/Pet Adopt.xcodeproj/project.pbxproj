@@ -154,17 +154,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2D0E153B1CE3B2A2009C1D76 /* tvOS-Flickr-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-Flickr-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D0E153B1CE3B2A2009C1D76 /* Pet Adopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Adopt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0E153E1CE3B2A2009C1D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D0E15401CE3B2A2009C1D76 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		2D0E15421CE3B2A2009C1D76 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2D0E15451CE3B2A2009C1D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D0E15471CE3B2A2009C1D76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D0E15491CE3B2A2009C1D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D0E154E1CE3B2A2009C1D76 /* tvOS-Flickr-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS-Flickr-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D0E154E1CE3B2A2009C1D76 /* Pet Adopt.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet Adopt.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0E15521CE3B2A2009C1D76 /* tvOS_Flickr_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOS_Flickr_AppTests.swift; sourceTree = "<group>"; };
 		2D0E15541CE3B2A2009C1D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D0E15591CE3B2A2009C1D76 /* tvOS-Flickr-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS-Flickr-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D0E15591CE3B2A2009C1D76 /* Pet Adopt.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet Adopt.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0E155D1CE3B2A2009C1D76 /* tvOS_Flickr_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOS_Flickr_AppUITests.swift; sourceTree = "<group>"; };
 		2D0E155F1CE3B2A2009C1D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D0E156D1CE3DD6E009C1D76 /* PersonalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalConstants.swift; sourceTree = "<group>"; };
@@ -252,9 +252,9 @@
 		2D0E153C1CE3B2A2009C1D76 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D0E153B1CE3B2A2009C1D76 /* tvOS-Flickr-App.app */,
-				2D0E154E1CE3B2A2009C1D76 /* tvOS-Flickr-AppTests.xctest */,
-				2D0E15591CE3B2A2009C1D76 /* tvOS-Flickr-AppUITests.xctest */,
+				2D0E153B1CE3B2A2009C1D76 /* Pet Adopt.app */,
+				2D0E154E1CE3B2A2009C1D76 /* Pet Adopt.xctest */,
+				2D0E15591CE3B2A2009C1D76 /* Pet Adopt.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -326,9 +326,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D0E153A1CE3B2A2009C1D76 /* tvOS-Flickr-App */ = {
+		2D0E153A1CE3B2A2009C1D76 /* Pet Adopt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D0E15621CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "tvOS-Flickr-App" */;
+			buildConfigurationList = 2D0E15621CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "Pet Adopt" */;
 			buildPhases = (
 				12A7A00E0867A5368DDAB5EA /* [CP] Check Pods Manifest.lock */,
 				2D0E15371CE3B2A2009C1D76 /* Sources */,
@@ -344,14 +344,14 @@
 				2D98D8D61D07409100218A7E /* PBXTargetDependency */,
 				2D8AF96A1D11D4800003F050 /* PBXTargetDependency */,
 			);
-			name = "tvOS-Flickr-App";
+			name = "Pet Adopt";
 			productName = "tvOS-Flickr-App";
-			productReference = 2D0E153B1CE3B2A2009C1D76 /* tvOS-Flickr-App.app */;
+			productReference = 2D0E153B1CE3B2A2009C1D76 /* Pet Adopt.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D0E154D1CE3B2A2009C1D76 /* tvOS-Flickr-AppTests */ = {
+		2D0E154D1CE3B2A2009C1D76 /* Pet AdoptTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D0E15651CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "tvOS-Flickr-AppTests" */;
+			buildConfigurationList = 2D0E15651CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "Pet AdoptTests" */;
 			buildPhases = (
 				2D0E154A1CE3B2A2009C1D76 /* Sources */,
 				2D0E154B1CE3B2A2009C1D76 /* Frameworks */,
@@ -362,14 +362,14 @@
 			dependencies = (
 				2D0E15501CE3B2A2009C1D76 /* PBXTargetDependency */,
 			);
-			name = "tvOS-Flickr-AppTests";
+			name = "Pet AdoptTests";
 			productName = "tvOS-Flickr-AppTests";
-			productReference = 2D0E154E1CE3B2A2009C1D76 /* tvOS-Flickr-AppTests.xctest */;
+			productReference = 2D0E154E1CE3B2A2009C1D76 /* Pet Adopt.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2D0E15581CE3B2A2009C1D76 /* tvOS-Flickr-AppUITests */ = {
+		2D0E15581CE3B2A2009C1D76 /* Pet AdoptUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D0E15681CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "tvOS-Flickr-AppUITests" */;
+			buildConfigurationList = 2D0E15681CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "Pet AdoptUITests" */;
 			buildPhases = (
 				2D0E15551CE3B2A2009C1D76 /* Sources */,
 				2D0E15561CE3B2A2009C1D76 /* Frameworks */,
@@ -380,9 +380,9 @@
 			dependencies = (
 				2D0E155B1CE3B2A2009C1D76 /* PBXTargetDependency */,
 			);
-			name = "tvOS-Flickr-AppUITests";
+			name = "Pet AdoptUITests";
 			productName = "tvOS-Flickr-AppUITests";
-			productReference = 2D0E15591CE3B2A2009C1D76 /* tvOS-Flickr-AppUITests.xctest */;
+			productReference = 2D0E15591CE3B2A2009C1D76 /* Pet Adopt.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -409,7 +409,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D0E15361CE3B2A2009C1D76 /* Build configuration list for PBXProject "tvOS-Flickr-App" */;
+			buildConfigurationList = 2D0E15361CE3B2A2009C1D76 /* Build configuration list for PBXProject "Pet Adopt" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -428,9 +428,9 @@
 			);
 			projectRoot = "";
 			targets = (
-				2D0E153A1CE3B2A2009C1D76 /* tvOS-Flickr-App */,
-				2D0E154D1CE3B2A2009C1D76 /* tvOS-Flickr-AppTests */,
-				2D0E15581CE3B2A2009C1D76 /* tvOS-Flickr-AppUITests */,
+				2D0E153A1CE3B2A2009C1D76 /* Pet Adopt */,
+				2D0E154D1CE3B2A2009C1D76 /* Pet AdoptTests */,
+				2D0E15581CE3B2A2009C1D76 /* Pet AdoptUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -630,12 +630,12 @@
 /* Begin PBXTargetDependency section */
 		2D0E15501CE3B2A2009C1D76 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D0E153A1CE3B2A2009C1D76 /* tvOS-Flickr-App */;
+			target = 2D0E153A1CE3B2A2009C1D76 /* Pet Adopt */;
 			targetProxy = 2D0E154F1CE3B2A2009C1D76 /* PBXContainerItemProxy */;
 		};
 		2D0E155B1CE3B2A2009C1D76 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D0E153A1CE3B2A2009C1D76 /* tvOS-Flickr-App */;
+			target = 2D0E153A1CE3B2A2009C1D76 /* Pet Adopt */;
 			targetProxy = 2D0E155A1CE3B2A2009C1D76 /* PBXContainerItemProxy */;
 		};
 		2D8AF96A1D11D4800003F050 /* PBXTargetDependency */ = {
@@ -778,8 +778,8 @@
 					"-lc++",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.tvOS-Flickr-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.Pet-Adopt";
+				PRODUCT_NAME = "Pet Adopt";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = appletvos9.2;
 				SWIFT_OBJC_BRIDGING_HEADER = "tvOS-Flickr-App/Bridging.h";
@@ -816,8 +816,8 @@
 					"-lc++",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.tvOS-Flickr-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.Pet-Adopt";
+				PRODUCT_NAME = "Pet Adopt";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = appletvos9.2;
 				SWIFT_OBJC_BRIDGING_HEADER = "tvOS-Flickr-App/Bridging.h";
@@ -833,8 +833,8 @@
 				INFOPLIST_FILE = "tvOS-Flickr-AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.tvOS-Flickr-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOS-Flickr-App.app/tvOS-Flickr-App";
+				PRODUCT_NAME = "Pet Adopt";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pet Adopt.app/Pet Adopt";
 			};
 			name = Debug;
 		};
@@ -845,8 +845,8 @@
 				INFOPLIST_FILE = "tvOS-Flickr-AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.tvOS-Flickr-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOS-Flickr-App.app/tvOS-Flickr-App";
+				PRODUCT_NAME = "Pet Adopt";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pet Adopt.app/Pet Adopt";
 			};
 			name = Release;
 		};
@@ -856,7 +856,7 @@
 				INFOPLIST_FILE = "tvOS-Flickr-AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.tvOS-Flickr-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pet Adopt";
 				TEST_TARGET_NAME = "tvOS-Flickr-App";
 				USES_XCTRUNNER = YES;
 			};
@@ -868,7 +868,7 @@
 				INFOPLIST_FILE = "tvOS-Flickr-AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjoshuah.tvOS-Flickr-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pet Adopt";
 				TEST_TARGET_NAME = "tvOS-Flickr-App";
 				USES_XCTRUNNER = YES;
 			};
@@ -877,7 +877,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D0E15361CE3B2A2009C1D76 /* Build configuration list for PBXProject "tvOS-Flickr-App" */ = {
+		2D0E15361CE3B2A2009C1D76 /* Build configuration list for PBXProject "Pet Adopt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D0E15601CE3B2A2009C1D76 /* Debug */,
@@ -886,7 +886,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D0E15621CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "tvOS-Flickr-App" */ = {
+		2D0E15621CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "Pet Adopt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D0E15631CE3B2A2009C1D76 /* Debug */,
@@ -895,7 +895,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D0E15651CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "tvOS-Flickr-AppTests" */ = {
+		2D0E15651CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "Pet AdoptTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D0E15661CE3B2A2009C1D76 /* Debug */,
@@ -904,7 +904,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D0E15681CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "tvOS-Flickr-AppUITests" */ = {
+		2D0E15681CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "Pet AdoptUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D0E15691CE3B2A2009C1D76 /* Debug */,

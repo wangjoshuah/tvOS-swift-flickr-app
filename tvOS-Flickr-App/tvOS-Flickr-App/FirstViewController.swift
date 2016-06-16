@@ -39,7 +39,8 @@ class FirstViewController: UICollectionViewController {
         flickrPhotoSearchText.content_type = "1"
         flickrPhotoSearchText.sort = "interestingness-desc";
         
-        let variation: OptimizelyVariation = OptimizelyManager.optimizely!.activateExperimentForKey("Flickr_Pictures", withUserId: OptimizelyManager.userId!);
+        // Bucket User
+        let variation: OptimizelyVariation = OptimizelyManager.optimizely!.activateExperimentForKey("Flickr_Pictures", withUserId: OptimizelyManager.getUserId());
         print(variation.variationKey);
         if (variation.variationKey == "Dogs") {
             flickrPhotoSearchText.text = "Dogs"
@@ -58,7 +59,6 @@ class FirstViewController: UICollectionViewController {
                         let photoURL = FlickrKit.sharedFlickrKit().photoURLForSize(FKPhotoSizeLarge2048, fromPhotoDictionary: photoDictionary)
                         self.photoURLs.append(photoURL)
                     }
-                    //                    self.loadPhotos(self.photoURLs)
                 }
                 else {
                     // Iterating over specific errors for each service
@@ -81,56 +81,16 @@ class FirstViewController: UICollectionViewController {
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.photoURLs.count
+        return AppDelegate.photoURLs.count
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("FirstViewControllerCollectionViewCellReuiseIdentifier", forIndexPath: indexPath)
         let imageView: UIImageView = UIImageView.init(image: AppDelegate.images[indexPath.row])
-        //        imageView.image = AppDelegate.images[indexPath.row]
         cell.contentView.addSubview(imageView)
         print(indexPath.description)
         print(indexPath.row.description)
         return cell
-    }
-    
-    func downloadImageFromURL(url: NSURL) -> UIImage {
-        print("downloadImageFromURL")
-        let urlRequest = NSURLRequest(URL: url)
-        let urlResponse: AutoreleasingUnsafeMutablePointer<NSURLResponse?> = nil
-        let downloadedData: NSData
-        var image: UIImage = UIImage.init()
-        do {
-            downloadedData = try NSURLConnection.sendSynchronousRequest(urlRequest, returningResponse: urlResponse)
-            image = UIImage(data: downloadedData)!
-        }
-        catch let error as NSError {
-            print(error.localizedDescription)
-        }
-        return image
-    }
-    
-    func loadPhotos(photoURLs: [NSURL]) {
-        print("loadPhotos")
-        for url in photoURLs {
-            let urlRequest = NSURLRequest(URL: url)
-            //            let urlResponse: AutoreleasingUnsafeMutablePointer<NSURLResponse?> = nil
-            //            let downloadedData: NSData
-            //            do {
-            //                downloadedData = try NSURLConnection.sendSynchronousRequest(urlRequest, returningResponse: urlResponse)
-            //                let image = UIImage(data: downloadedData)
-            //                self.images.append(image!)
-            //            }
-            //            catch let error as NSError {
-            //                print(error.localizedDescription)
-            //            }
-            NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue(), completionHandler: { (response, data, error) -> Void in
-                let image = UIImage(data: data!)
-                self.images.append(image!)
-                self.collectionView?.reloadData()
-            })
-            self.collectionView!.reloadData()
-        }
     }
     
 }

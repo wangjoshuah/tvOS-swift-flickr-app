@@ -9,6 +9,7 @@
 import UIKit
 import FlickrKit
 import Alamofire
+import Darwin
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,32 +20,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        print("application did finish launching with options")
         AppDelegate.photoURLs = []
         AppDelegate.images = []
         
         // Override point for customization after application launch.
         FlickrKit.sharedFlickrKit().initializeWithAPIKey(PersonalConstants.FLICKR_KEY, sharedSecret: PersonalConstants.FLICKR_SECRET);
-        
         let url: NSURL = NSURL(string: "https://cdn.optimizely.com/json/6184430073.json")!
         let request: NSURLRequest = NSURLRequest(URL: url)
         let response: AutoreleasingUnsafeMutablePointer<NSURLResponse?>=nil
         let downloadedDataFile: NSData;
         do {
+            // download datafile
             downloadedDataFile = try NSURLConnection.sendSynchronousRequest(request, returningResponse: response)
-            
+            // start optimizely with datafile
             OptimizelyManager.optimizely = Optimizely.initWithBuilderBlock { (builder) -> Void in
                 builder.dataFile = downloadedDataFile;
             }
-            
-            OptimizelyManager.userId = NSDate.timeIntervalSinceReferenceDate().description;
         }
         catch let error as NSError {
             print(error.localizedDescription)
         }
-        
         downloadImages()
         
         return true
+    }
+    
+    func applicationDidBecomeActive(application: UIApplication) {
     }
     
     func downloadImages() {
@@ -55,12 +57,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         flickrPhotoSearchText.content_type = "1"
         flickrPhotoSearchText.sort = "interestingness-desc";
         
-        let variation: OptimizelyVariation = OptimizelyManager.optimizely!.activateExperimentForKey("Flickr_Pictures", withUserId: OptimizelyManager.userId!);
-        print(variation.variationKey);
+        
+        // Bucket user into a variation
+        let variation: OptimizelyVariation = OptimizelyManager.optimizely!.activateExperimentForKey("Flickr_Pictures", withUserId: OptimizelyManager.getUserId());
+        
         if (variation.variationKey == "Dogs") {
+            print("Variation Dogs")
             flickrPhotoSearchText.text = "golden retriever"
         }
         else if (variation.variationKey == "Cats") {
+            print("Variation Cats")
             flickrPhotoSearchText.text = "jumping cat"
         }
         
@@ -115,14 +121,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        OptimizelyManager.resetUserId()
+        exit(0)
     }
     
     func applicationWillEnterForeground(application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-    }
-    
-    func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        downloadImages()
     }
     
     func applicationWillTerminate(application: UIApplication) {
