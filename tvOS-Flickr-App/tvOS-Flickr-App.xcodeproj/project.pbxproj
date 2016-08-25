@@ -25,6 +25,7 @@
 		2D0E15A91CEBB9E4009C1D76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0E15A81CEBB9E4009C1D76 /* UIKit.framework */; };
 		2D0E15AB1CEBB9F1009C1D76 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0E15AA1CEBB9F1009C1D76 /* libicucore.tbd */; };
 		2D0E15AD1CEBB9F8009C1D76 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0E15AC1CEBB9F8009C1D76 /* libsqlite3.tbd */; };
+		6B2614BB81585D331AF51EAA /* libPods-tvOS-Flickr-App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7068B71C4B0DA56A078F5D04 /* libPods-tvOS-Flickr-App.a */; };
 		EA6552CB538908BD9A411118 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A036914C8EDA99D5BEE8CDD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,9 @@
 		2D0E15AC1CEBB9F8009C1D76 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		4A036914C8EDA99D5BEE8CDD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F0B9E8DC43C6BBB9E2ABF2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7068B71C4B0DA56A078F5D04 /* libPods-tvOS-Flickr-App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tvOS-Flickr-App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0D5A6573E84755FAD1DCF2E /* Pods-tvOS-Flickr-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS-Flickr-App.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-tvOS-Flickr-App/Pods-tvOS-Flickr-App.debug.xcconfig"; sourceTree = "<group>"; };
+		BB1F4D337E5F42784D17655E /* Pods-tvOS-Flickr-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS-Flickr-App.release.xcconfig"; path = "../Pods/Target Support Files/Pods-tvOS-Flickr-App/Pods-tvOS-Flickr-App.release.xcconfig"; sourceTree = "<group>"; };
 		FAF737C6B914B9472A3FAC76 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +96,7 @@
 				2D0E159D1CEBB9BC009C1D76 /* AudioToolbox.framework in Frameworks */,
 				2D0E15721CE3FB54009C1D76 /* libFlickrKit.a in Frameworks */,
 				EA6552CB538908BD9A411118 /* libPods.a in Frameworks */,
+				6B2614BB81585D331AF51EAA /* libPods-tvOS-Flickr-App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +131,7 @@
 				2D0E159C1CEBB9BC009C1D76 /* AudioToolbox.framework */,
 				2D0E15711CE3FB54009C1D76 /* libFlickrKit.a */,
 				4A036914C8EDA99D5BEE8CDD /* libPods.a */,
+				7068B71C4B0DA56A078F5D04 /* libPods-tvOS-Flickr-App.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,6 +196,8 @@
 			children = (
 				63F0B9E8DC43C6BBB9E2ABF2 /* Pods.debug.xcconfig */,
 				FAF737C6B914B9472A3FAC76 /* Pods.release.xcconfig */,
+				A0D5A6573E84755FAD1DCF2E /* Pods-tvOS-Flickr-App.debug.xcconfig */,
+				BB1F4D337E5F42784D17655E /* Pods-tvOS-Flickr-App.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -201,12 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D0E15621CE3B2A2009C1D76 /* Build configuration list for PBXNativeTarget "tvOS-Flickr-App" */;
 			buildPhases = (
-				12A7A00E0867A5368DDAB5EA /* Check Pods Manifest.lock */,
+				12A7A00E0867A5368DDAB5EA /* [CP] Check Pods Manifest.lock */,
 				2D0E15371CE3B2A2009C1D76 /* Sources */,
 				2D0E15381CE3B2A2009C1D76 /* Frameworks */,
 				2D0E15391CE3B2A2009C1D76 /* Resources */,
-				AFE05AC3A7EB112F96214EB2 /* Embed Pods Frameworks */,
-				C61B772AEBF82B696FC64780 /* Copy Pods Resources */,
+				AFE05AC3A7EB112F96214EB2 /* [CP] Embed Pods Frameworks */,
+				C61B772AEBF82B696FC64780 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,14 +331,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12A7A00E0867A5368DDAB5EA /* Check Pods Manifest.lock */ = {
+		12A7A00E0867A5368DDAB5EA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,34 +346,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		AFE05AC3A7EB112F96214EB2 /* Embed Pods Frameworks */ = {
+		AFE05AC3A7EB112F96214EB2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-tvOS-Flickr-App/Pods-tvOS-Flickr-App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C61B772AEBF82B696FC64780 /* Copy Pods Resources */ = {
+		C61B772AEBF82B696FC64780 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-tvOS-Flickr-App/Pods-tvOS-Flickr-App-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -508,7 +516,7 @@
 		};
 		2D0E15631CE3B2A2009C1D76 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63F0B9E8DC43C6BBB9E2ABF2 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = A0D5A6573E84755FAD1DCF2E /* Pods-tvOS-Flickr-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -526,7 +534,7 @@
 		};
 		2D0E15641CE3B2A2009C1D76 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAF737C6B914B9472A3FAC76 /* Pods.release.xcconfig */;
+			baseConfigurationReference = BB1F4D337E5F42784D17655E /* Pods-tvOS-Flickr-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

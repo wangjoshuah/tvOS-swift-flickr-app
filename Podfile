@@ -1,5 +1,10 @@
-platform :tvos, '9.0'
+#xcodeproj 'tvOS-Flickr-App/tvOS-Flickr-App.xcodeproj'
+#platform :tvos, '9.0'
 
-xcodeproj 'tvOS-Flickr-App/tvOS-Flickr-App.xcodeproj'
+project 'tvOS-Flickr-App/tvOS-Flickr-App.xcodeproj'
 
-pod 'FlickrKit'
+target 'tvOS-Flickr-App' do
+
+	pod 'FlickrKit'
+
+end
